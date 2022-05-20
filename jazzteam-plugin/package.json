@@ -1,0 +1,58 @@
+{
+  "name": "selenium-ide-file-uploader",
+  "version": "0.0.0",
+  "repository": "",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "build:prod": "rm -rf build && env NODE_ENV=production yarn build",
+    "test": "jest",
+    "lint": "eslint webpack.config.babel.js src/ --ext .js --ext .jsx"
+  },
+  "jest": {
+    "testMatch": [
+      "**/src/**/__test?(s)__/**/*.js?(x)"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.0.4",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^2.1.0",
+    "eslint": "^4.15.0",
+    "eslint-plugin-class-property": "^1.1.0",
+    "eslint-plugin-jest": "^21.6.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^22.0.5",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.6"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.4.8",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-hot-loader": "^4.6.3",
+    "ua-parser-js": "^0.7.19",
+    "webextension-polyfill": "0.3.1"
+  }
+}

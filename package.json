@@ -1,0 +1,6 @@
+{
+  "name": "selenium-ide-plugins",
+  "scripts": {
+    "build": "cd jazzteam-plugin && yarn && yarn build"
+  }
+}
